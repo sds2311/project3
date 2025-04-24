@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>My first three.js app</title>
+    <title>DnD Portfolio</title>
     <link rel="stylesheet" href="dnd.css">
     <script type="importmap">
       {
@@ -19,7 +19,27 @@
     </style>
   </head>
   <body>
-    <h1>D&D Portfolio</h1>
+    <div class="title_row">
+      <img src="images/Torch_Gif.gif" alt="torch1">
+      <h1>D&D Portfolio</h1>
+      <img src="images/Torch_Gif.gif" alt="torch2">
+    </div>
     <script type="module" src="main.js"></script>
+    <div id="canvas-container"></div>
+    <button class="roll" onclick="roll()">Roll</button>
+    <div class="bottom_row">
+      <img src="images/dragonImage.png" alt="dragon">
+      <img id="factImage" alt="fact"> 
+    </div>
+    <script>
+      function randomImage() {
+        const fact = ['images/fact1.png', 'images/fact2.png', 'images/fact3.png', 
+        'images/fact4.png', 'images/fact5.png', 'images/fact6.png'];
+        const index = Math.floor(Math.random() * fact.length);
+        const selected = fact[index];
+        document.getElementById('factImage').src = selected;
+      }
+      window.onload = randomImage;
+    </script>
   </body>
 </html>
