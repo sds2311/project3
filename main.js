@@ -9,7 +9,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('canvas-container').appendChild(renderer.domElement);
 
 const loader = new THREE.TextureLoader();
-const woodTexture = loader.load('images/wood.jpeg');
+const woodTexture = loader.load('wood.jpeg');
 const geometry = new THREE.IcosahedronGeometry(1);
 const material = new THREE.MeshStandardMaterial({
   map: woodTexture,
