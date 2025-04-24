@@ -3,8 +3,26 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
-    background-color: rgb(0, 0, 0);
+    min-height: 60vh;
+    background-color: rgb(0, 0, 0); 
+  }
+
+  #canvas-container {
+    width: 800px;  
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1px;
+  }
+
+  .title_row {
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    gap: 1px;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 auto;
   }
   
   h1 {
@@ -16,4 +34,52 @@ body {
     margin-bottom: 0px;
   }
 
+  .title_row img[alt="torch1"] 
+  {
+    grid-column: 1;
+    height: 200px;
+    width: 200px;
+    align-self: flex-end;
+  }
+  
+  .title_row img[alt="torch2"] 
+  {
+    grid-column: 3; 
+    height: 200px;
+    width: 200px;
+    align-self: flex-end;
+  }
+
+  .roll {
+    padding: 20px 20px;
+    background-color: #ff0000;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 35px;
+    font-family: "UnifrakturMaguntia", "Fette UNZ Fraktur", "Old English Text MT", "Blackletter", serif;
+    margin-bottom: 50px;
+  }
+
+  .bottom_row {
+    display: grid;
+    grid-template-columns: auto auto; 
+    gap: 1px;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .bottom_row img[alt="dragon"] {
+    height: 300px;
+    width: 400px;
+    object-fit: contain;
+  }
+  
+  .bottom_row img[alt="fact"] {
+    height: 300px;
+    width: 400px;
+    object-fit: contain;
+  }
   
